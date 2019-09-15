@@ -1,44 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:text="年级" />
+
+        <TextView
+            android:id="@+id/grade1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="32sp"
+            android:clickable="true"
+            android:background="@drawable/textview_border_unclick"
+            android:gravity="center"
+            android:text="一" />
+        <TextView
+            android:id="@+id/grade2"
+            android:layout_width="match_parent"
+            android:textSize="32sp"
+            android:layout_height="55dp"
+            android:background="@drawable/textview_border_unclick"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="二" />
+        <TextView
+            android:id="@+id/grade3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/textview_border_unclick"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:text="三" />
+        <TextView
+            android:id="@+id/grade4"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/textview_border_unclick"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:text="四" />
+        <TextView
+            android:id="@+id/grade5"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/textview_border_unclick"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:text="五" />
+        <TextView
+            android:id="@+id/grade6"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/textview_border_unclick"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:text="六" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:minHeight="?actionBarSize"
-            android:padding="@dimen/appbar_padding"
-            android:text="@string/app_name"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@android:drawable/ic_menu_rotate" />
+    </LinearLayout>
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabs"
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/textView1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary" />
-    </com.google.android.material.appbar.AppBarLayout>
+            android:layout_height="75dp"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:text="班级" />
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
+        <TextView
+            android:id="@+id/class1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/textview_border_unclick"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textSize="32sp"
+            android:text="(1)" />
+        <TextView
+            android:id="@+id/class2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/textview_border_unclick"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:textSize="32sp"
+            android:text="(2)" />
+        <TextView
+            android:id="@+id/class3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/textview_border_unclick"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="32sp"
+            android:text="(3)" />
+        <TextView
+            android:id="@+id/class4"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/textview_border_unclick"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="32sp"
+            android:text="(4)" />
+        <TextView
+            android:id="@+id/class5"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/textview_border_unclick"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="32sp"
+            android:text="(5)" />
+        <TextView
+            android:id="@+id/class6"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/textview_border_unclick"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="32sp"
+            android:text="(6)" />
+        <TextView
+            android:id="@+id/class7"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/textview_border_unclick"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="32sp"
+            android:text="(7)" />
+        <TextView
+            android:id="@+id/class8"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/textview_border_unclick"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="32sp"
+            android:text="(8)" />
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/text_header_name"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:text="姓名" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listview"></ListView>
+    </LinearLayout>
+
+
+</LinearLayout>
